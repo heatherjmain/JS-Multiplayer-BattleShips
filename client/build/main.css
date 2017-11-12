@@ -1,0 +1,84 @@
+*{
+  font-family: "Lobster", cursive;
+  text-shadow: 2px 2px #9ec3ff;
+}
+
+#game-title{
+  text-align: center;
+}
+
+.maps-and-ships{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#my-map-and-title{
+  flex: 10;
+  margin-left: 20px;
+  margin-right: 20px;
+
+}
+
+#opponent-map-and-title{
+  flex: 10;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+#map-container-title{
+  margin-left: 100px;
+}
+
+#grid{
+  display: grid;
+  align-items: stretch;
+  grid-template-columns: 4vw 4vw 4vw 4vw 4vw 4vw 4vw 4vw;
+  grid-template-rows: 4vw 4vw 4vw 4vw 4vw 4vw 4vw 4vw;
+  grid-gap: 0.1vw;
+  background-color: white;
+  color: #111;
+}
+
+.grid-cell{
+  display: flex;
+  background-color: #9ec3ff;
+}
+
+.ships{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  text-align: center;
+  margin: 10px;
+}
+
+#ship-name-text{
+  font-size: 0.95em;
+}
+
+#battleship{
+  width: 250px;
+  height: auto;
+}
+
+#aircraft-carrier{
+  width: 200px;
+  height: auto;
+}
+
+#destroyer{
+  width: 180px;
+  height: auto;
+}
+
+#submarine{
+  width: 140px;
+  height: auto;
+}
+
+#small-ship{
+  width: 80px;
+  height: auto;
+}
