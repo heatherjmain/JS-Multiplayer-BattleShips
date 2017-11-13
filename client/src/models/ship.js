@@ -4,7 +4,6 @@ var Ship = function(name, length) {
   this.name = name,
   this.length = length,
   this.shipPosition = []
-  // this.startPoint = null
 }
 
 Ship.prototype.findRequiredCellsForShip = function(startPoint, direction) {
@@ -18,20 +17,6 @@ Ship.prototype.findRequiredCellsForShip = function(startPoint, direction) {
     }
   }
 }
-
-// Ship.prototype.checkIfPositionAvailable = function() {
-//   const cellsAvailable = []
-//
-//   this.findRequiredCellsForShip()
-//
-//   for (let cell of this.shipPosition) {
-//     if (cell.status === null) {
-//       cellsAvailable.push(true)
-//     }
-//   }
-//   return cellsAvailable
-// }
-
 
 
 module.exports = Ship
