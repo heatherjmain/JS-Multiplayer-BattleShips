@@ -8,8 +8,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
+    "mochatest": "mocha src/models/specs",
     "eject": "react-scripts eject"
-
   },
   "author": "",
   "license": "ISC",
@@ -20,6 +20,7 @@
     "socket.io": "^2.0.4"
   },
   "devDependencies": {
+    "mocha": "^4.0.1",
     "react-scripts": "^1.0.17"
   }
 }

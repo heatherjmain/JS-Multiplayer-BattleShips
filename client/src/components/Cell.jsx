@@ -13,12 +13,15 @@ class Cell extends React.Component {
   }
 
   handleCellClick(index) {
-    return console.log(this.props.index + " has been clicked!")
+    this.setState({
+      status: "hasShip"
+    })
+    console.log(this.props.index + " has been clicked and status is " + this.state.status)
   }
 
   render() {
     return (
-      <div className="grid-cell" onClick={this.handleCellClick}>{this.props.status}</div>
+      <div className="grid-cell" onClick={this.handleCellClick}></div>
     )
   }
 }
